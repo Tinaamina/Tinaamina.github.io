@@ -1,24 +1,25 @@
 # Page personnelle de Tinhinane Amina Azzouz
 
-Site académique statique en anglais, préparé pour GitHub Pages et actualisé le 30 octobre 2026. L’archive comprend les quatre pages, le portrait repris de la page Google Sites, le CV PDF, sa source LaTeX et les références bibliographiques.
+Site académique statique en anglais, publié sur GitHub Pages et actualisé le 30 octobre 2026. L’archive comprend les quatre pages, le portrait repris de la page Google Sites, le CV PDF, sa source LaTeX et les références bibliographiques.
 
-## Voir le site
+## Site en ligne
 
-Ouvrir `index.html` dans un navigateur après avoir extrait l’archive. Les liens entre les pages et le téléchargement du CV fonctionnent localement. Aucun compte, serveur, installation ou service tiers n’est nécessaire pour consulter ces fichiers.
+- **Site :** [https://tinaamina.github.io/](https://tinaamina.github.io/)
+- **Dépôt :** [Tinaamina/Tinaamina.github.io](https://github.com/Tinaamina/Tinaamina.github.io)
+- **CV :** [Télécharger le PDF](https://tinaamina.github.io/files/CV_Tinhinane_Amina_Azzouz.pdf)
 
-## Publier sur GitHub Pages
+GitHub Pages publie automatiquement la branche **main**, depuis le dossier **/(root)**. HTTPS est activé et imposé.
 
-Le compte personnel identifié est `Tinaamina`. Si c’est bien le compte choisi, le dépôt d’une page personnelle doit s’appeler `Tinaamina.github.io` et l’adresse sera `https://tinaamina.github.io/` après le premier déploiement réussi. Cette adresse est une destination proposée, pas une publication déjà effectuée.
+Pour consulter une copie locale, extraire l’archive et ouvrir `index.html` dans un navigateur. Les liens entre les pages et le téléchargement du CV fonctionnent également localement.
 
-1. Se connecter au compte GitHub qui doit posséder le site.
-2. Créer un dépôt public nommé `Tinaamina.github.io` si le compte choisi est `Tinaamina`. Pour un autre compte, remplacer le nom par `IDENTIFIANT.github.io`. Si un dépôt de ce nom existe déjà, vérifier son contenu avant toute modification.
-3. Déposer **le contenu extrait de l’archive** à la racine du dépôt, afin que `index.html` soit directement à la racine. Ne pas déposer uniquement le fichier ZIP.
-4. Dans **Settings → Pages → Build and deployment**, choisir **Deploy from a branch**, puis **main** et **/(root)**. Enregistrer.
-5. Attendre la réussite de la publication et ouvrir l’adresse indiquée par GitHub. Vérifier l’accueil, les trois autres pages et le lien du CV.
+## Mettre le site à jour
 
-Les mêmes fichiers fonctionnent dans un dépôt de projet ordinaire, à une adresse de la forme `https://IDENTIFIANT.github.io/NOM-DU-DEPOT/`, grâce aux liens relatifs.
+1. Ouvrir le [dépôt GitHub](https://github.com/Tinaamina/Tinaamina.github.io) avec le compte `Tinaamina`.
+2. Ouvrir le fichier à modifier, puis cliquer sur le crayon **Edit this file**. Modifier le texte en conservant les balises HTML autour de celui-ci.
+3. Enregistrer avec **Commit changes** sur la branche **main**. Pour remplacer un PDF ou une image, utiliser **Add file → Upload files** dans le dossier correspondant, en conservant le nom du fichier.
+4. Attendre la fin de la publication automatique, puis ouvrir la page concernée sur le site et vérifier les liens modifiés.
 
-Référence officielle : <https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site>.
+Le site ne nécessite aucune compilation ni dépendance externe. La configuration de publication est consultable dans **Settings → Pages** ; les déploiements apparaissent dans **Actions**. [Documentation GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site).
 
 ## Modifier le contenu
 
@@ -35,7 +36,7 @@ Référence officielle : <https://docs.github.com/en/pages/getting-started-with-
 | `files/publications.bib` | Bibliographie au format BibTeX |
 | `SOURCES.md` | Sources et décisions de mise à jour |
 
-Le nom exact de la feuille de style est aussi indiqué dans la balise `link` au début de chaque fichier HTML. Le site ne nécessite aucune étape de compilation. Une modification validée sur la branche publiée est prise en compte par GitHub Pages.
+Les quatre pages utilisent la même feuille de style, `assets/site.css`. Les liens entre les fichiers sont relatifs : conserver leurs noms et leur emplacement lors des mises à jour.
 
 ## Recompiler le CV
 
@@ -47,10 +48,10 @@ pdflatex CV_Tinhinane_Amina_Azzouz.tex
 pdflatex CV_Tinhinane_Amina_Azzouz.tex
 ```
 
-Copier ensuite le nouveau PDF dans `files/`, en conservant son nom. Les commandes du site et du CV sont indépendantes : publier le site ne nécessite pas LaTeX.
+Copier ensuite le nouveau PDF dans `files/`, en conservant son nom, puis mettre à jour le PDF et la source LaTeX dans le dépôt. Le lien « Research webpage » du CV renvoie à [https://tinaamina.github.io/](https://tinaamina.github.io/). Publier les pages HTML ne nécessite pas LaTeX.
 
 ## Mise à jour éditoriale
 
-La page Google Sites et l’ancien CV restent disponibles à leurs adresses d’origine. Le lien web dans le CV renvoie encore à la page existante tant que la nouvelle adresse GitHub n’a pas été publiée. Une fois le site en ligne, remplacer ce lien dans la source du CV, recompiler et déposer le PDF actualisé.
+La page Google Sites et l’ancien CV restent disponibles à leurs adresses d’origine. Le site GitHub et le CV actualisé utilisent désormais la nouvelle adresse personnelle.
 
 Les projets en cours conservent un statut de travaux en préparation. Les informations professionnelles reprises ici proviennent de pages publiques et du CV public d’origine. Le mois de début du postdoctorat YMSC diffère entre deux sources ; la période est donc indiquée comme **2021–2023**.
